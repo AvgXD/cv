@@ -73,32 +73,41 @@
 								  <span class="txt-rotate" data-period="2000" data-rotate="[ " Desarrollador web", "Diseñador "Programador", "Blogger", "Maquetador","Editor de Videos" ]"></span>
 								</h2> -->
                <div>
-  <p class="p1" style="color:black">Bienvenidos a mi página</p>
+ <p class="line anim-typewriter">Si el código funciona, no lo toques.</p>
 </div>
 <style type="text/css">
-	.p1 {
-	color: black;
-  width: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 20px;
-  margin: 0 auto;
-  font-family: "Courier New";
-  border-right: 0.15em solid #18bdec;
-  animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+	.line {
+      position: relative;
+      top: 50%;
+      width: 16em;
+      margin: 0 auto;
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      font-size: 180%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;transform: translateY(-50%);
 }
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+/*Animation*/
+.anim-typewriter {
+      animation: typewriter 4s steps(36) 1s 1 normal both,
+      blinkTextCursor 500ms steps(36) infinite normal;
 }
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 16em;
+      }
+}
+
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
 }
 </style>
 							</div>
