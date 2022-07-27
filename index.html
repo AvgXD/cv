@@ -37,6 +37,14 @@
   gtag('config', 'G-TK3Y65GNZT');
 </script>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('WgTpVebdXKvW5nVQU');
+        })();
+    </script>
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -913,9 +921,25 @@
 	          </div>
           </div>
         </div>
+         <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form method="post" action="https://avg1996.heliohost.us/send.php" autocomplete="off" class="bg-light p-4 p-md-5 contact-form">
+            <form method="post" autocomplete="off" class="bg-light p-4 p-md-5 contact-form" id="contact-form">
               <div class="form-group">
                 <input type="text" name="first_name" class="form-control" placeholder="Nombre">
               </div>
