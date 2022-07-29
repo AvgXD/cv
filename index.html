@@ -29,21 +29,10 @@
     <meta name="google-site-verification" content="KwN3w1TPhSRTgJRf5c_7H0yPUymmwsZXjiXAE6z94oc" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TK3Y65GNZT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-TK3Y65GNZT');
-</script>
+<script src="script.js"></script>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('WgTpVebdXKvW5nVQU');
-        })();
-    </script>
+
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -908,22 +897,7 @@
 	          </div>
           </div>
         </div>
-         <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+       
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
                <form id="form" autocomplete="off" class="bg-light p-4 p-md-5 contact-form" id="contact-form">
@@ -946,30 +920,7 @@
          <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<script type="text/javascript">
-  emailjs.init('WgTpVebdXKvW5nVQU');
 
-  const btn = document.getElementById('button');
-
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
-
-   btn.value = 'Sending...';
-
-   const serviceID = 'default_service';
-   const templateID = 'template_oq827xo';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
-</script>
           
           
           </div>
@@ -1022,18 +973,7 @@ document.getElementById('form')
         </div>
       </div>
     </footer>
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/60519614067c2605c0b939c4/1f0vb4gdc';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
+
 
 <a href='#' class='scroll-top'>
     <svg height='35' viewBox='0 0 24 24' width='35' xmlns='http://www.w3.org/2000/svg'>
@@ -1041,19 +981,7 @@ s0.parentNode.insertBefore(s1,s0);
        <path d='M0 0h24v24H0z' fill='none'/>
     </svg>
 </a>
-<script type="text/javascript">
-	$(window).scroll(function() {
-    if ($(this).scrollTop() > 300) {
-        $('a.scroll-top').fadeIn('slow');
-    } else {
-        $('a.scroll-top').fadeOut('slow');
-    }
-});
-$('a.scroll-top').click(function(event) {
-    event.preventDefault();
-    $('html, body').animate({scrollTop: 0}, 600);
-});
-</script>
+
 
 <!--End of Tawk.to Script-->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#1070DD"/></svg></div>
