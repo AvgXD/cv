@@ -9680,7 +9680,7 @@ textarea.form-control {
   .line {
       position: relative;
       top: 50%;
-      width: 16em;
+      width: 18em;
       margin: 0 auto;
       border-right: 2px solid rgba(255, 255, 255, 0.75);
       font-size: 180%;
@@ -9698,7 +9698,7 @@ textarea.form-control {
             width: 0;
       }
       to {
-            width: 16em;
+            width: 18em;
       }
 }
 
