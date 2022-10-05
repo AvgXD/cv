@@ -77,15 +77,16 @@
                <div>
  <!-- <p class="line anim-typewriter" style="color:black;">Bienvenidos a mi sitio web CV</p> -->
   <div class="container2">
-    <p>Coding is <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+    <p style="color:black;">Soy un <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
   </div>
-  <style type="text/css">
-  	.container2 {
+</div>
+<style type="text/css">
+	  .container2 {
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -200px;
+  margin-top: -30px;
 }
 .container2 p {
   font-size: 3rem;
@@ -97,7 +98,7 @@
 }
 .container2 p span.typed-text {
   font-weight: normal;
-  color: #dd7732;
+  color: #3F63FC;
 }
 .container2 p span.cursor {
   display: inline-block;
@@ -116,12 +117,13 @@
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
 }
-  </style>
+</style>
+
 <script type="text/javascript">
-	const typedTextSpan = document.querySelector(".typed-text");
+	  const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["hard", "fun", "a journey", "LIFE"];
+const textArray = ["Desarrollador Web", "Diseñador Web", "Maquetador", "Blogger","Editor de Videos"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000; // Delay between current and next text
@@ -137,12 +139,12 @@ function type() {
   } 
   else {
     cursorSpan.classList.remove("typing");
-  	setTimeout(erase, newTextDelay);
+    setTimeout(erase, newTextDelay);
   }
 }
 
 function erase() {
-	if (charIndex > 0) {
+    if (charIndex > 0) {
     if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
     typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
     charIndex--;
@@ -160,8 +162,6 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
 </script>
-</div>
-
 							</div>
             </div>
           </div>
